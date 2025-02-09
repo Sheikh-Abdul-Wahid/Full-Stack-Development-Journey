@@ -1,2 +1,1 @@
-# Full-Stack-Development-Journey
-This repository documents my Python learning journey. The problems that I encountered. How I solved those problems.
+This repository documents my Full Stack Development learning journey. The problems that I encountered. How I solved those problems.
