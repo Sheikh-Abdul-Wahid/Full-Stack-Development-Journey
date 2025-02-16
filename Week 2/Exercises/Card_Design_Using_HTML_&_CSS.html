@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: lightgray;
+            padding: 45px;
+            display: flex;
+        }
+
+        .card {
+            background-color: white;
+            width: 200px;
+            height: 400px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 10px;
+            width: 190px;
+        }
+
+        .capsules {
+            padding: 8px 2px 5px 7px;
+            color: grey;
+        }
+
+        .capsules span {
+            border: 1px solid lightgray;
+            border-radius: 12px;
+            padding: 2px 7px;
+            margin: 3px;
+        }
+
+        .content {
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .content p {
+            font-size: 12px;
+            padding: 5px;
+            color: grey;
+        }
+
+        .content h2 {
+            padding: 5px;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            border-radius: 12px;
+            padding: 7px;
+            font-size: 10px;
+            font-weight: bold;
+            border: none;
+            color: blue;
+            background-color: rgb(180, 230, 231);
+            cursor: pointer;
+        }
+
+        .button :hover {
+            background-color: rgb(85, 159, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img height="125px" src="image.jpg" alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Sunset</h2>
+            <p>These short sunset quotes are concise enough to jot down in a card for a friend or add to your collection
+                of inspirational quotes. You're sure to find caption ideas aplenty for that gorgeous evening sky
+                snapshot you want to share.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img height="125px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtu3Gx4G48mNREmwoL2LQTj6kl3VhjcKocoA&s" alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Sea</span>
+        </div>
+        <div class="content">
+            <h2>Morning</h2>
+            <p>The great sea makes one a great skeptic. 
+              The sea is as near as we come to another world. 
+              The sea is a continual miracle; the fishes that swim, the rocks, the motion of the waves, the ships with men in them. 
+              The sea is as near as we come to another world.
+            </p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
