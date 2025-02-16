@@ -1,0 +1,22 @@
+/* 1. position: fixed; (Element Always Stays in Place)*/
+
+.fixed-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Example: Fixed floating buttons or fixed sidebars */
+
+/* 2. position: sticky; (Sticks While Scrolling, Then Stops) */
+
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+/* Example: Sticky navbar that sticks when scrolling */
