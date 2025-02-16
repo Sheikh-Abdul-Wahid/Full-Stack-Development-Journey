@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;     /* use display: inline-block; instead of inline */
+            width: 180px;
+            height: 70px;
+            padding: 10px;
+            margin: 30px;
+            background-color: lightblue;
+        }
+
+        .newbox {
+            border: 2px solid red;
+            display: inline;          /* width, height, padding & margin will not be applied */
+            width: 190px;
+            height: 50px;
+            padding: 10px;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">This is a box</div>
+    <div class="box">I am a good Programmer</div>
+    <span class="newbox">This is a span box</span>
+    <span class="newbox">Another Span box which is same as above</span>
+</body>
+
+</html>
