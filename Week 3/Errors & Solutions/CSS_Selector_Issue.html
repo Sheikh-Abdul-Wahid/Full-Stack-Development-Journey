@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Issue</title>
+  <style>
+
+     /* Error CSS Selector: ❌ This doesn’t work as expected! */
+    .container:first-child {  
+    color: blue;
+    background-color: violet;
+    }
+
+    /* Correct CSS Selector: ✔️ This works for any box you want to target! */
+    .item:first-child {  /* for first box */
+    color: blue;
+    background-color: violet;
+    }
+
+    .item:nth-child(2) { /* for second box */
+    color: red;
+    }
+
+    .item:last-child {  /* for any last box */
+    background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item">First box for HOME</div>
+    <div class="item">Second box for ABOUT</div>
+    <div class="item">Third box for CONTACT</div>
+    </div>
+</body>
+</html>
