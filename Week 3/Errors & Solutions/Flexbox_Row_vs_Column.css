@@ -1,0 +1,35 @@
+/* flex-direction: row; */
+<style>
+.container {
+    display: flex;
+    flex-direction: row;     /* Main axis is left to right */
+    justify-content: center; /* Moves items left & right (main axis) */
+    align-items: center;     /* Moves items up & down (cross axis) */
+    height: 200px;           /* Just to see vertical alignment */
+    border: 2px solid black;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+</style>
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+/* flex-direction: column; */
+.container {
+    display: flex;
+    flex-direction: column;  /* Main axis is top to bottom */
+    justify-content: center; /* Moves items up & down (main axis) */
+    align-items: center;     /* Moves items left & right (cross axis) */
+    height: 300px;           /* Just to see vertical alignment */
+    border: 2px solid black;
+}
