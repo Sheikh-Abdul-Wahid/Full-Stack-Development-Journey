@@ -1,0 +1,25 @@
+/* Example (Hover Effect): The background changes from blue to red smoothly when hovered. */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.box:hover {
+  background-color: red;
+}
+
+/* Example (Moving Box): The box moves left and right without user interaction. */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
