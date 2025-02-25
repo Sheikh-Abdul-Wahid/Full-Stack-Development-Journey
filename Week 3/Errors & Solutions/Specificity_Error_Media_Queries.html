@@ -1,0 +1,67 @@
+/* Incorrect Media Query: */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Conflict</title>
+    <style>
+        /* Base Style */
+        .container .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Media Query */
+        @media (max-width: 600px) {
+            .button {
+                background-color: red; /* Won't apply due to lower specificity */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button">Click Here</button>
+    </div>
+</body>
+</html>
+
+/* Correct Media Query: */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Conflict</title>
+    <style>
+        /* Base Style */
+        .container .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Media Query Fix by Increasing Specificity */
+        @media (max-width: 600px) {
+            .container .button {    /* Matches specificity */
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button">Click Here</button>
+    </div>
+</body>
+</html>
