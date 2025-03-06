@@ -1,4 +1,4 @@
-// Bug due to ASI:
+// Bug due to ASI mechanism:
 
 function getUser() {
   return                
