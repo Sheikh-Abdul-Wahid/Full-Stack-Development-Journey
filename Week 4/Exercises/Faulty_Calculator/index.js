@@ -12,11 +12,11 @@ let obj = {
     "/" : "**"
 }
 if (random > 0.1){
-    // perform correct calculation
+    // Perform correct calculation
     alert(`The result is ${eval(`${a} ${c} ${b}`)}`) // eval() function makes every calculation inside it like a calculator
 }
 else{
-    // perform wrong calculation
+    // Perform wrong calculation
     c = obj[c]
     alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
 }
