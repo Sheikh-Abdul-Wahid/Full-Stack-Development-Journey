@@ -1,0 +1,51 @@
+<!-- Incorrect javascript code: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+    <style>
+        .box {
+            height: 30px;
+            width: 70px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box ONE</div>
+        <div class="box">Box TWO</div>
+        <div class="box">Box THREE</div>
+        <div class="box">Box FOUR</div>
+        <div class="box">Box FIVE</div>
+    </div>
+    <script>
+        document.querySelectorAll(".box").style.backgroundColor = "blue" // Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor')
+    </script>
+</body>
+
+</html>
+
+<!-- Solution 1: Use forEach() loop:(Recommended)  -->
+
+<script>
+  document.querySelectorAll(".box").forEach(box => {
+    box.style.backgroundColor = "blue";
+});
+</script>
+
+<!-- Solution 2: Use a for Loop: -->
+
+<script>
+  let boxes = document.querySelectorAll(".box");
+  for (let i = 0; i < boxes.length; i++) {
+    boxes[i].style.backgroundColor = "blue";
+}
+</script>
