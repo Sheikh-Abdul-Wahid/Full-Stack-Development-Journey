@@ -13,7 +13,7 @@ let obj = {
 }
 if (random > 0.1){
     // Perform correct calculation
-    alert(`The result is ${eval(`${a} ${c} ${b}`)}`) // eval() function makes every calculation inside it like a calculator
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)  // eval() function makes every calculation inside it like a calculator
 }
 else{
     // Perform wrong calculation
