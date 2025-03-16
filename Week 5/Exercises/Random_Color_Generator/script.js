@@ -18,6 +18,6 @@ Array.from(boxes).forEach(e => {
     setInterval(() => {
         e.style.backgroundColor = getRandomColor()
         e.style.color = getRandomColor()
-    }, 1000);
+    }, 1000);  // generate color every 1 second
 
 })
