@@ -13,7 +13,7 @@ function createBlinkingDots(baseMessage, Duration) {
         setTimeout(() => {
             clearInterval(interval);
             message.textContent = `${baseMessage}...`;
-            resolve(baseMessage); // The Promise still resolves, but the returned value is undefined if we use resolve() no value in bracket.
+            resolve(baseMessage); // The Promise still resolves, but the returned value is undefined if we use resolve() with no value inside bracket.
         }, Duration);
     })
 }
